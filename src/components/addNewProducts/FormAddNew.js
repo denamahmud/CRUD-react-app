@@ -56,6 +56,7 @@ function FormAddNew({
           {selectedImage ? (
             <div>
               <img
+                loading="lazy"
                 style={{
                   width: 60,
                   height: 60,
