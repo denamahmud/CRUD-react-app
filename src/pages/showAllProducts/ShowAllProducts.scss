@@ -1,0 +1,116 @@
+@import "../../variables.scss";
+
+.show-all-products {
+  padding: 30px 0;
+}
+
+// start top section
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-icon {
+  font-size: 2.2rem;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.heart-icon {
+  font-size: 2.2rem;
+  margin: 0 10px;
+  cursor: pointer;
+}
+// end top section
+.card {
+  background-color: $white-color;
+  padding: 20px;
+  border-radius: 20px;
+  color: $primary-color;
+  box-shadow: $boxShadow;
+  text-decoration: none;
+  .image-style {
+    img {
+      width: 250px;
+      height: 250px;
+      border-radius: 15px;
+      object-fit: cover;
+      @media screen and (max-width: 768px) {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
+.show-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin: 50px;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+  }
+}
+.image-details {
+  img {
+    width: 80%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+}
+// details style
+.details-container {
+  padding: 50px 0;
+  .details-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+    .card-title {
+      font-size: 2.3rem;
+    }
+    .card-price {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.details-desc-style {
+  text-align: start;
+  padding-right: 50px;
+  @media screen and (max-width: 768px) {
+    padding: 40px;
+  }
+  .title-product {
+    color: $primary-color;
+    font-size: 2rem;
+  }
+  .price-product {
+    color: $grey-color;
+    font-size: 1.2rem;
+  }
+  .desc-product {
+    color: $grey-color;
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 2rem;
+  }
+}
+.bottom-details {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 80px auto 10px;
+}
+.go-to-another-page {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+.number {
+  color: $primary-color;
+}

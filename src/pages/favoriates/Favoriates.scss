@@ -1,0 +1,110 @@
+@import "../../variables.scss";
+
+.favoriates-container {
+  padding: 50px 0;
+  .card-fav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background-color: $white-color;
+    box-shadow: $boxShadow;
+    color: $grey-color;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+      width: 400px;
+      padding: 5px;
+    }
+    .fav-title {
+      font-size: 1.2rem;
+      @media screen and (max-width: 768px) {
+        font-size: 1rem;
+      }
+    }
+    .fav-price {
+      font-size: 1.2rem;
+      @media screen and (max-width: 768px) {
+        font-size: 1rem;
+      }
+    }
+    .fav-desc {
+      white-space: nowrap;
+      width: 100px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .card-container {
+      width: 100%;
+      .card-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        @media screen and (max-width: 768px) {
+          gap: 5px;
+          justify-content: space-between;
+        }
+      }
+    }
+    .fav-image {
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+        object-fit: cover;
+        @media screen and (max-width: 768px) {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+.bottom-favoriates {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 80px auto 10px;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 2rem;
+  @media screen and (max-width: 768px) {
+    font-size: 1.5rem;
+    gap: 0;
+  }
+}
+
+// edit favoriate form
+
+.form-content-edit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+  .input-style-edit {
+    background-color: $off-white-color;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 15px 0;
+  }
+}
+
+.bottom-favoriates {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

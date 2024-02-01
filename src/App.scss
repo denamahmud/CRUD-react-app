@@ -1,0 +1,76 @@
+@import "./variables.scss";
+
+body {
+  text-align: center;
+  background-color: $off-white-color;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  @media screen and (max-width: 768px) {
+    width: 95%;
+    margin: auto;
+  }
+}
+.icon {
+  color: $primary-color;
+  font-size: 2rem;
+  margin: 0 10px;
+  cursor: pointer;
+  @media screen and (max-width: 768px){
+    font-size: 1.5rem;
+  }
+}
+.icon-camera {
+  cursor: pointer;
+  font-size: 2rem;
+  color: $grey-color;
+}
+.btn {
+  background: $primary-color;
+  color: $white-color;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.title-page {
+  color: $primary-color;
+  font-size: 2.5rem;
+  text-align: left;
+  @media screen and (max-width: 768px) {
+    font-size: 1.7rem;
+    
+  }
+}
+
+.success-msg {
+  background-color: #4cafa0;
+  color: $white-color;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  animation: fadeOut 5s ease-in-out forwards;
+}
+.invisible{
+  background-color: #ffb2b2;
+  cursor: no-drop
+  ;
+}
+@keyframes fadeOut {
+  50% {
+    opacity: 1;
+  }
+  0%,
+  100% {
+    opacity: 0;
+  }
+}

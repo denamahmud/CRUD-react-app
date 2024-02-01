@@ -1,0 +1,25 @@
+@import "../../variables.scss";
+
+.home-container {
+  background: url("../../imgs/Home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.heading {
+  color: $primary-color;
+  font-size: 3rem;
+}
+.paragraph {
+  color: $grey-color;
+  font-size: 2.5rem;
+}
