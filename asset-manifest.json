@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-crud-app/static/css/main.96a2188c.css",
+    "main.js": "/react-crud-app/static/js/main.934259d6.js",
+    "static/media/Home.png": "/react-crud-app/static/media/Home.9b710fb033eee530f8e9.png",
+    "static/media/add-to-cart.png": "/react-crud-app/static/media/add-to-cart.5dccf6915af2fed7d50f.png",
+    "index.html": "/react-crud-app/index.html",
+    "main.96a2188c.css.map": "/react-crud-app/static/css/main.96a2188c.css.map",
+    "main.934259d6.js.map": "/react-crud-app/static/js/main.934259d6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.96a2188c.css",
+    "static/js/main.934259d6.js"
+  ]
+}
